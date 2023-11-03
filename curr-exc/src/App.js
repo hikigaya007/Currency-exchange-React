@@ -5,13 +5,14 @@ const App = () => {
     <div className='container'>
         <div className='inner-container' >
             <div className="textbox1-container">
-                <p>From</p>
+                <p style={{marginLeft:'10px'}}>From</p>
                 <input type="text" className="textbox1" />
             </div>
             <div className="textbox2-container">
-                <p>To</p>
+                <p style={{marginLeft:'10px'}}>To</p>
                 <input type="text" className="textbox2" />
             </div>
+            <input type="button" value={"Covert"} className='convert-button' />
         </div>
     </div>
   )
