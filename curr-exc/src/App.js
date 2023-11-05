@@ -26,7 +26,8 @@ const App = () => {
   const convert = () => {
     const exchangeRate = data[convertCurrency] ;
     console.log(data[convertCurrency]);
-    setConvertedAmount(amount * exchangeRate);
+    let convert = amount * exchangeRate;
+    setConvertedAmount(convert);
   }
 
   useCurrencyInfo(selectedCurrency);
