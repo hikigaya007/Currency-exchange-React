@@ -67,6 +67,7 @@ const App = () => {
                 <div className="textbox1-container2">
                   Currency Type:
                   <select  style={{marginTop:'-20px'}} onChange={(e) => onCurrencyChange(e)}>
+                    <option selected={true} value={'usd'}>USD</option>
                     {currencyOptions.map((currency) => (
                       <option key={currency} value={currency}>{currency.toUpperCase()}
                       </option>
@@ -87,6 +88,7 @@ const App = () => {
                 <div className="textbox1-container2">
                   Currency Type:
                   <select style={{marginTop:'-20px'}} onChange={(e) => onOutputCurrency(e)} >
+                  <option selected={true} value={'inr'}>INR</option>
                     {currencyOptions.map((currency) => (
                       <option key={currency} value={currency}>{currency.toUpperCase()}</option>
                     ))}
