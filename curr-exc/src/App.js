@@ -55,7 +55,7 @@ const App = () => {
         <div className='inner-container' >
             <div className="textbox1-container">
                 <div className="textbox1-container1">
-                  <p style={{marginLeft:'10px'}}>From</p>
+                  <p className="From" style={{marginLeft:'10px'}}>From</p>
                   <input 
                   id={amountInputId}
                   type="text" 
@@ -65,7 +65,7 @@ const App = () => {
                   onChange={(e) => onAmountChange && onAmountChange((e.target.value))}/>
                 </div>
                 <div className="textbox1-container2">
-                  Currency Type:
+                <p className='currency1'>Currency Type:</p>
                   <select  style={{marginTop:'-20px'}} onChange={(e) => onCurrencyChange(e)}>
                     <option selected={true} value={'usd'}>USD</option>
                     {currencyOptions.map((currency) => (
@@ -78,7 +78,7 @@ const App = () => {
             </div>
             <div className="textbox1-container">
                 <div className="textbox1-container1">
-                  <p style={{marginLeft:'10px'}}>To</p>
+                  <p className="to" style={{marginLeft:'10px'}}>To</p>
                   <input 
                   type="text" 
                   className="textbox2" 
@@ -86,7 +86,7 @@ const App = () => {
                   value={convertedAmount}/>
                 </div>
                 <div className="textbox1-container2">
-                  Currency Type:
+                  <p className='currency1'>Currency Type:</p>
                   <select style={{marginTop:'-20px'}} onChange={(e) => onOutputCurrency(e)} >
                   <option selected={true} value={'inr'}>INR</option>
                     {currencyOptions.map((currency) => (

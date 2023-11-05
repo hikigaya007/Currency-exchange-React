@@ -76,3 +76,35 @@ select{
     cursor: pointer;
     height: 30px;
 }
+
+@media (max-width: 768px) {
+    .inner-container {
+        height: 70%;
+        max-width: 100%;
+      
+    }
+    .textbox1-container {
+        flex-direction: column;
+        height: 50%;
+    }
+    .textbox1,
+    .textbox2 {
+        margin-top: 10px;
+        margin-left: 50px;
+        width: 80%;
+    }
+    select {
+        margin-left: 45px;
+        width: 80%;
+    }
+    .From{
+        padding-left: 170px;
+    }
+    .to{
+        padding-left: 190px;
+    }
+    .currency1{
+        margin-bottom: 40px;
+        margin-left: 120px;
+    }
+  }
